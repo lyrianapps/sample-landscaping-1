@@ -62,7 +62,7 @@ export function Layout245() {
               <div className="rb-5 mb-5 md:mb-6">
                 <img
                   src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                  alt="Relume logo"
+                  alt="Landscaping sample logo"
                   className="size-12"
                 />
               </div>
