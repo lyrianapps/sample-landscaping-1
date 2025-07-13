@@ -1,5 +1,5 @@
-# Use the official Node.js image as the base
-FROM node:18-slim
+# Use the latest official Node.js image as the base
+FROM node:current
 
 # Install required system dependencies, including libvips for sharp
 RUN apt-get update && apt-get install -y \
