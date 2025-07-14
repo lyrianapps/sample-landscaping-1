@@ -2,7 +2,6 @@ import { Navbar7 } from "@/components/Navbar7";
 import { Header1 } from "@/components/Header1";
 import { Layout12 } from "@/components/Layout12";
 import { Layout242 } from "@/components/Layout242";
-import { Layout240 } from "@/components/Layout240";
 import { Layout1 } from "@/components/Layout1";
 import { Testimonial6 } from "@/components/Testimonial6";
 import { Cta27 } from "@/components/Cta27";
@@ -16,7 +15,6 @@ export default function Home() {
       <Header1 />
       <Layout12 />
       <Layout242 />
-      <Layout240 />
       <Layout1 />
       <Testimonial6 />
       <Cta27 />

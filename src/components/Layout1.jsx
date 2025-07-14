@@ -3,7 +3,7 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
-
+import Image from "next/image";
 export function Layout1() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
@@ -24,21 +24,15 @@ export function Layout1() {
               <Button title="Learn More" variant="secondary">
                 Learn More
               </Button>
-              <Button
-                title="Sign Up"
-                variant="link"
-                size="link"
-                iconRight={<RxChevronRight />}
-              >
-                Sign Up
-              </Button>
             </div>
           </div>
           <div>
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+            <Image
+              alt="Landscaping sample image"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              src={"/assets/photo-5.avif"}
+              width={1100}
+              height={1100}
             />
           </div>
         </div>

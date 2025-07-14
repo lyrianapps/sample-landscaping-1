@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import { RiLeafLine, RiSunLine } from "react-icons/ri"; // Example: Relume uses Remix Icons
 
 export function Layout12() {
   return (
@@ -22,11 +24,7 @@ export function Layout12() {
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div>
                 <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo 1"
-                  />
+                  <RiLeafLine className="text-green-700" size={32} />
                 </div>
                 <h6 className="mb-3 text-md leading-[1.4] font-bold md:mb-4 md:text-xl">
                   Custom Designs
@@ -38,11 +36,7 @@ export function Layout12() {
               </div>
               <div>
                 <div className="mb-3 md:mb-4">
-                  <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-                    className="size-12"
-                    alt="Relume logo 1"
-                  />
+                  <RiSunLine className="text-yellow-500" size={28} />
                 </div>
                 <h6 className="mb-3 text-md leading-[1.4] font-bold md:mb-4 md:text-xl">
                   Sustainable Practices
@@ -55,10 +49,12 @@ export function Layout12() {
             </div>
           </div>
           <div>
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+            <Image
+              alt="Landscaping sample image"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              src={"/assets/photo-4.avif"}
+              width={1900}
+              height={1900}
             />
           </div>
         </div>

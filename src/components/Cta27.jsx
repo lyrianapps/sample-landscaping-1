@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@relume_io/relume-ui";
+import Image from "next/image";
 import React from "react";
 
 export function Cta27() {
@@ -22,14 +23,16 @@ export function Cta27() {
         </div>
       </div>
       <div className="absolute inset-0 z-0">
-        {/* <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-          className="size-full object-cover"
-          alt="Relume placeholder image"
-        /> */}
+        <Image
+          alt="Landscaping sample image"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={"/assets/photo-2.avif"}
+          width={1900}
+          height={1900}
+        />
+
         <div className="absolute inset-0 bg-black/50" />
       </div>
     </section>
   );
-
 }

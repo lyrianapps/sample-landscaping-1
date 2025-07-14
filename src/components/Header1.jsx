@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { RxChevronRight } from "react-icons/rx";
 
 export function Header1() {
   return (
-    <section className="max-w-7xl mx-auto py-24 px-6 bg-[#f4f4f2] rounded-2xl">
+    <section className="max-w-7xl mx-auto py-24 px-6  rounded-2xl">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Heading, description, buttons */}
@@ -38,10 +39,12 @@ export function Header1() {
           {/* Right: Image */}
           <div>
             <div className="w-full h-[420px] bg-[#dbdbd6] rounded-2xl flex items-center justify-center">
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Placeholder"
-                className="object-contain h-40 opacity-80"
+              <Image
+                alt="Landscaping sample image"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                src={"/assets/photo-1.avif"}
+                width={1100}
+                height={1100}
               />
             </div>
           </div>

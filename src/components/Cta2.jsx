@@ -2,7 +2,7 @@
 
 import { Button, Input } from "@relume_io/relume-ui";
 import React from "react";
-
+import Image from "next/image";
 export function Cta2() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
@@ -13,11 +13,17 @@ export function Cta2() {
               Stay Updated with Landscaping Tips
             </h2>
             <p className="md:text-md">
-              Join our newsletter for expert landscaping tips, trends, and exclusive updates delivered to your inbox.
+              Join our newsletter for expert landscaping tips, trends, and
+              exclusive updates delivered to your inbox.
             </p>
             <div className="mt-6 w-full max-w-sm md:mt-8">
               <form className="rb-4 mb-4 grid max-w-sm grid-cols-1 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-4">
-                <Input id="email" type="email" placeholder="Your Email Here" />
+                <Input
+                  className="w-full"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email Here"
+                />
                 <Button title="Join Now">Join Now</Button>
               </form>
               <div
@@ -33,10 +39,12 @@ export function Cta2() {
             </div>
           </div>
           <div>
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+            <Image
+              alt="Landscaping sample image"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              src={"/assets/photo-6.avif"}
+              width={1900}
+              height={1900}
             />
           </div>
         </div>
@@ -44,4 +52,3 @@ export function Cta2() {
     </section>
   );
 }
-
