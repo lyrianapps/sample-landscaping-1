@@ -4,6 +4,7 @@ import { Button } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { RxChevronDown } from "react-icons/rx";
 
 const useRelume = () => {
@@ -22,10 +23,10 @@ const useRelume = () => {
 
 export function Navbar7() {
   const useActive = useRelume();
+  const pathname = usePathname();
 
   // Dynamic navigation links
   const navLinks = [
-    { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Services" },
     { href: "/contact", label: "Contact" },
@@ -50,7 +51,11 @@ export function Navbar7() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
+                  className={`relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base transition-colors ${
+                    pathname === link.href
+                      ? "font-bold text-green-700 border-b-2 border-green-700"
+                      : "text-[#181c0d] hover:text-green-700"
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -129,7 +134,11 @@ export function Navbar7() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block py-3 text-md"
+                    className={`block py-3 text-md transition-colors ${
+                      pathname === link.href
+                        ? "font-bold text-green-700 border-l-4 border-green-700 pl-3 bg-green-50"
+                        : "text-[#181c0d] hover:text-green-700"
+                    }`}
                   >
                     {link.label}
                   </Link>
