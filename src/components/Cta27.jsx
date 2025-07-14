@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@relume_io/relume-ui";
 import Image from "next/image";
 import React from "react";

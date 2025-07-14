@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { RxChevronRight } from "react-icons/rx";
 
 export function Header1() {
   return (

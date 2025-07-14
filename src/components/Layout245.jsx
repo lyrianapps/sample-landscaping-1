@@ -1,8 +1,5 @@
-"use client";
-
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
-import { RxChevronRight } from "react-icons/rx";
 
 export function Layout245() {
   return (

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { RiLeafLine, RiSunLine } from "react-icons/ri"; // Example: Relume uses Remix Icons
