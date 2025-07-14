@@ -86,11 +86,7 @@ export function Footer1() {
                     <span>Contact Us</span>
                   </a>
                 </li>
-                <li className="py-2 text-sm">
-                  <a href="#" className="flex items-center gap-3">
-                    <span>Blog</span>
-                  </a>
-                </li>
+
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
                     <span>Careers</span>
@@ -119,11 +115,6 @@ export function Footer1() {
                 <li className="py-2 text-sm">
                   <a href="#" className="flex items-center gap-3">
                     <span>Privacy</span>
-                  </a>
-                </li>
-                <li className="py-2 text-sm">
-                  <a href="#" className="flex items-center gap-3">
-                    <span>Sitemap</span>
                   </a>
                 </li>
               </ul>
