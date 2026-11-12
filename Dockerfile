@@ -1,5 +1,5 @@
-# Use the latest official Node.js image as the base
-FROM node:current
+# Use a supported LTS Node.js image as the base
+FROM node:22-slim
 
 # Install required system dependencies, including libvips for sharp
 RUN apt-get update && apt-get install -y \
@@ -20,6 +20,9 @@ COPY . .
 
 # Build the application
 RUN yarn build
+
+RUN chown -R node:node /app
+USER node
 
 # Expose the port the app runs on
 EXPOSE 3000
